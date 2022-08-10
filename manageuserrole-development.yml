@@ -6,4 +6,12 @@ spring:
     url: jdbc:mysql://localhost:3306/testDB
   jpa:
     hibernate:
-      ddl-auto: update 
+      ddl-auto: update
+value:
+  rendered: development
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"

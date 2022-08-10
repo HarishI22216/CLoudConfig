@@ -8,7 +8,7 @@ spring:
     hibernate:
       ddl-auto: update
 value:
-  rendered: sruthi 
+  rendered: staging
 management:
   endpoints:
     web:
