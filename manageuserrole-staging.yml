@@ -8,4 +8,4 @@ spring:
     hibernate:
       ddl-auto: update
 value:
-  rendered: MARK 
+  rendered: TWAIN 
