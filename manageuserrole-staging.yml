@@ -1,9 +1,16 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: root
-    url: jdbc:mysql://localhost:3306/stageDB
+  config:
+    import:
+    - vault://  
+  cloud:
+    vault:
+      kv:
+        enabled: true
+      scheme: http
+      token: hvs.z7hKpgMHS0uHoioI5zxYzoYt
+  application:
+    name: manageuserrole
+    
   jpa:
     hibernate:
       ddl-auto: update
@@ -15,3 +22,5 @@ management:
       exposure:
         include:
         - "*"
+ds:
+  url: jdbc:mysql://localhost:3306/stageDB
