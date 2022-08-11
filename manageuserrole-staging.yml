@@ -3,7 +3,7 @@ spring:
     name: manageuserrole
   config:
     import:
-    - vault://  
+    - vault://secret/manageuserrole 
   cloud:
     vault:
       kv:
